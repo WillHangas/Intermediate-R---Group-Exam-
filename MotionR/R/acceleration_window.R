@@ -10,7 +10,7 @@
 #' @param window How large you want the indexed window to be. Default is 1000
 #' @param threshold A numeric threshold where changes in acceleration exceeding the threshold is manipulated. Default is 0.5
 #'
-#' @returns New columns "mean" and "binary"
+#' @returns New columns "mean" (when acceleration exceeds threshold largest difference min/max is selected) and "binary"
 #' @export
 #'
 #' @examples
@@ -24,7 +24,7 @@
 #'  #Run function
 #'  accelerometer_data <- window_threshold_test(accelerometer_data)
 #'
-window_threshold_test <- function(data,column="euclidean_norm",window=1000,threshold=0.5){
+window_threshold_min_max <- function(data,column="euclidean_norm",window=1000,threshold=0.5){
 
   #Creat new columns to contain the smoothen data, and a binary vector if there is an increase or decrease
   #in acceleration
@@ -84,7 +84,7 @@ window_threshold_test <- function(data,column="euclidean_norm",window=1000,thres
 #'  #Run function
 #'  accelerometer_data <- window_threshold_test(accelerometer_data)
 #'
-window_function_test_mean <- function(data,column,window,threshold){
+window_threshold_mean <- function(data,column="euclidean_norm",window=1000,threshold=0.5){
 
   #Creat new columns to contain the smoothen data, and a binary vectro if there is an increase or deacrease
   #in acceleration

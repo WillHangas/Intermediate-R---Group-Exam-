@@ -2,6 +2,7 @@
 
 export(accelerometer_data)
 export(euclidean_calculation)
-export(plot_acceleration)
-export(window_function_test_mean)
-export(window_threshold_test)
+export(plot_accelerometer)
+export(plot_accelerometer_data)
+export(window_threshold_mean)
+export(window_threshold_min_max)

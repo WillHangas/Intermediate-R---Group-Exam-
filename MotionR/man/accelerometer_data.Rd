@@ -2,7 +2,7 @@
 % Please edit documentation in R/acceleration_vector.R
 \name{accelerometer_data}
 \alias{accelerometer_data}
-\title{Title Import of accelerometer data and change class on time variable}
+\title{Import of accelerometer data and change class on time variable}
 \usage{
 accelerometer_data(data)
 }
@@ -13,5 +13,5 @@ accelerometer_data(data)
 A dataframe with the calculated "acceleration_vector"
 }
 \description{
-Title Import of accelerometer data and change class on time variable
+Import of accelerometer data and change class on time variable
 }

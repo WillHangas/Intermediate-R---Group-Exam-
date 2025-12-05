@@ -1,6 +1,6 @@
 
 
-#' Title Import of accelerometer data and change class on time variable
+#' Import of accelerometer data and change class on time variable
 #'
 #' @param data The name of the file which the data are to be read from.
 #'
@@ -49,5 +49,4 @@ euclidean_calculation <- function(data){
 
 return(data)
 }
-
 
