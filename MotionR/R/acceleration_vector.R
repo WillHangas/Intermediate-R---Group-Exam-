@@ -9,9 +9,9 @@
 #'
 #'
 #'
-accelerometer_data <- function(data){
+read_accelerometer_data <- function(path){
 #Store data in df
-  df <- read.csv(file=data)
+  df <- read.csv(file=path)
 
 #Convert time to POSIXct
   df$time <- as.POSIXct(df$time)
@@ -19,7 +19,6 @@ accelerometer_data <- function(data){
 return(df)
 
 }
-
 
 
 
